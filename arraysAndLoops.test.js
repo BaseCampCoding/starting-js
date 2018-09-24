@@ -60,15 +60,15 @@ describe('sumOfLonger', function() {
 
 describe('arrayEquals', function() {
     test('[1, 2, 3] equals [1, 2, 3]', function() {
-      expect(objects.arrayEquals([1, 2, 3], [1, 2, 3])).toEqual(true);
+      expect(ll.arrayEquals([1, 2, 3], [1, 2, 3])).toEqual(true);
     });
 
     test('[] equals []', function() {
-      expect(objects.arrayEquals([], [])).toEqual(true);
+      expect(ll.arrayEquals([], [])).toEqual(true);
     });
 
     test('[1] does not equal [1, 2]', function() {
-      expect(objects.arrayEquals([1], [1, 2])).toEqual(false);
+      expect(ll.arrayEquals([1], [1, 2])).toEqual(false);
     });
 });
 
